@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "C8J3Fd1PkzyeYUXeCvp0mK/rumkuW+Z9bur1CKYzMnUhSaeih1r617KP3+KXi93gars3pNruTgXx7SfkzgDI3A==",
+  "success": true,
+  "projectFilePath": "/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/Pomodoro.csproj",
+  "expectedPackageFiles": [
+    "/home/zette/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.2/microsoft.aspnetcore.app.ref.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

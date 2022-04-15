@@ -1,0 +1,12 @@
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/bin/Debug/net6.0/Tasks.deps.json
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/bin/Debug/net6.0/Tasks.dll
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/bin/Debug/net6.0/ref/Tasks.dll
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/bin/Debug/net6.0/Tasks.pdb
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/Debug/net6.0/Tasks.csproj.AssemblyReference.cache
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/Debug/net6.0/Tasks.GeneratedMSBuildEditorConfig.editorconfig
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/Debug/net6.0/Tasks.AssemblyInfoInputs.cache
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/Debug/net6.0/Tasks.AssemblyInfo.cs
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/Debug/net6.0/Tasks.csproj.CoreCompileInputs.cache
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/Debug/net6.0/Tasks.dll
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/Debug/net6.0/ref/Tasks.dll
+/home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/Debug/net6.0/Tasks.pdb

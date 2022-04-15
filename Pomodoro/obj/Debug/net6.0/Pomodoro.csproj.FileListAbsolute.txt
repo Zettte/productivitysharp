@@ -1,0 +1,12 @@
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/bin/Debug/net6.0/Pomodoro.deps.json
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/bin/Debug/net6.0/Pomodoro.dll
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/bin/Debug/net6.0/ref/Pomodoro.dll
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/bin/Debug/net6.0/Pomodoro.pdb
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/obj/Debug/net6.0/Pomodoro.csproj.AssemblyReference.cache
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/obj/Debug/net6.0/Pomodoro.GeneratedMSBuildEditorConfig.editorconfig
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/obj/Debug/net6.0/Pomodoro.AssemblyInfoInputs.cache
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/obj/Debug/net6.0/Pomodoro.AssemblyInfo.cs
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/obj/Debug/net6.0/Pomodoro.csproj.CoreCompileInputs.cache
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/obj/Debug/net6.0/Pomodoro.dll
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/obj/Debug/net6.0/ref/Pomodoro.dll
+/home/zette/Documents/Programmation./C#./Productivity/Pomodoro/obj/Debug/net6.0/Pomodoro.pdb
