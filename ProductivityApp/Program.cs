@@ -106,9 +106,9 @@ namespace Productivity
 			do
 			{
 				Console.Clear();
-				Console.WriteLine("\t.----------------.\n\t| Pomodoro |\n\t.----------------.");
+				Console.WriteLine("\t.----------------.\n\t Pomodoro \n\t.----------------.");
 
-				Console.Write("\nHow many mimutes do you want to stay focused? Wehn the time has finished you will have a 5 minutes break: ");
+				Console.Write("\nHow many mimutes do you want to stay focused? When the time has finished you will have a 5 minutes break: ");
 
 				Minutes = int.Parse(Console.ReadLine());
 
