@@ -1,81 +1,55 @@
-﻿using CsvHelper;
-using CsvHelper.Configuration;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace Tasks
 {
 	public class _Task
 	{
-		public int Id { get; set; }
-		public string Name { get; set; } = string.Empty;
-		public string Description { get; set; } = string.Empty;
-		public DateTime Date { get; set; }
-		public bool Done { get; set; }
-
-		private static int TempId = 1;
-		// Using CsvHelper to add a row in the task.csv file.
-
-		public static void AddTask(string name, string desc, DateTime date, bool done = false)
+		public static void AddTask(string Name, string Description, DateTime Date, bool Done = false)
 		{
-			var Records = new List<_Task>
-			{
-				new _Task {Id = TempId, Name = name, Description = desc, Date = date, Done = done}
-			};
-				
-			// If you want to modify the path, make sure that is correctly typed and the folder contains a csv file.
 
-			using (var Writer = new StreamWriter(@"../ProductivityApp/task.csv"))
-			using (var Csv = new CsvWriter(Writer, CultureInfo.InvariantCulture))
-			{
-				Csv.WriteRecords(Records);
-			}
+			string done = ( Done == false ) ? "Not done yet" : "Done";
+			string TaskInfo = Name + ", " + Description + ", " + Date.ToString() + ", " + done; 
 
+			using StreamWriter File = new (@"../ProductivityApp/tasks.txt", append:true);
+			File.WriteLine(TaskInfo);
+
+			Console.Clear();
 			Console.ForegroundColor = ConsoleColor.Green;
 			Console.WriteLine("Task added succesfully!");
 			Console.ResetColor();
-
-			TempId++;
 		}
 
-		// In this method, we pull all of the records into memory and then write 'em back to the file.
-
-		public static void DeleteTask(int RemoveId)
+		public static void DeleteAllTasks()
 		{
-			List<_Task> Records;
+			File.Delete(@"../ProductivityApp/tasks.txt");
 
-			using (var Reader = new StreamReader(@"../ProductivityApp/task.csv"))
-			using (var Csv = new CsvReader(Reader, CultureInfo.InvariantCulture))
-			{
-				Records = Csv.GetRecords<_Task>().ToList();
-
-				for(int i = 0 ; i < Records.Count ; ++i)
-				{
-					if( Records[i].Id ==  RemoveId)
-					{
-						Records.RemoveAt(i);
-					}
-				}
-			}
-
-			using (var Writer = new StreamWriter(@"../ProductivityApp/task.csv"))
-			using (var CsvWriter = new CsvWriter(Writer, CultureInfo.InvariantCulture))
-			{
-				CsvWriter.WriteRecords(Records);
-			}
-
+			Console.Clear();
 			Console.ForegroundColor = ConsoleColor.Red;
-			Console.WriteLine("Your task was deleted succesfully.");
+			Console.WriteLine("Your tasks were deleted succesfully.");
 			Console.ResetColor();
+
+			File.Create(@"../ProductivityApp/tasks.txt");
 		}
 		
 		public static void ReadTask()
 		{ 
-			string[] AllTasks = File.ReadAllLines(@"../ProductivityApp/task.csv");
-			Console.WriteLine("Your current tasks are: ");
-			foreach(string Line in AllTasks)
+			if( new FileInfo("../ProductivityApp/tasks.txt").Length == 0)
 			{
-				if(Line != "Id,Name,Description,Date,Done")
+				Console.ForegroundColor = ConsoleColor.Red;
+				Console.WriteLine("Please add some tasks.");
+				Console.ResetColor();
+			}
+			else
+			{
+				string[] AllTasks = File.ReadAllLines(@"../ProductivityApp/tasks.txt");
+			
+				Console.Clear();
+				Console.WriteLine("Your current tasks are: ");
+				foreach(string Line in AllTasks)
+				{
 					Console.WriteLine($"\t{Line}");
+				}
+				Console.WriteLine();
 			}
 		}
 	}
