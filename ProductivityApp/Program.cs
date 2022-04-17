@@ -17,6 +17,7 @@ namespace Productivity
 					Console.WriteLine("\t.----------------.\n\t| Productity App |\n\t.----------------.");
 
 					Console.WriteLine("\n\tSelect an option. \n\t[ 1 ] Tasks.\n\t[ 2 ] Pomodoro. \n\t[ 3 ] Exit.\n");
+					Console.Write("Option: ");
 
 				} while( !int.TryParse(Console.ReadLine(), out Option) || Option < 1 || Option > 3);
 
@@ -53,8 +54,9 @@ namespace Productivity
 					Console.WriteLine("\t.----------------.\n\t Tasks Menu \n\t.----------------.");
 
 					Console.WriteLine("\n\tSelect and option. \n\t[ 1 ] Add task.\n\t[ 2 ] Delete task. \n\t[ 3 ] See all my tasks.\n\t[ 4 ] Return to main menu.\n");
-
-				} while( !int.TryParse(Console.ReadLine(), out Option) || Option < 1 || Option > 4);
+					Console.Write("Option: ");
+				
+				}while( !int.TryParse(Console.ReadLine(), out Option) || Option < 1 || Option > 4);
 
 				bool Back = false;
 
@@ -78,12 +80,13 @@ namespace Productivity
 						Console.WriteLine();
 						break;
 					case 2:
-						int Id;
 
-						Console.Write("Please provide the index of the task that you want to delete: ");
-						bool Convert = int.TryParse(Console.ReadLine(), out Id);
-
-						_Task.DeleteTask(Id);
+						Console.Write("Are you sure do you want to delete all your tasks? [Y/N]: ");
+						string Desicion = Console.ReadLine();
+						if(Desicion == "Y")
+						{
+							_Task.DeleteAllTasks();
+						}
 
 						break;
 					case 3:
@@ -106,9 +109,9 @@ namespace Productivity
 			do
 			{
 				Console.Clear();
-				Console.WriteLine("\t.----------------.\n\t Pomodoro \n\t.----------------.");
+				Console.WriteLine("\t.----------------.\n\t| Pomodoro |\n\t.----------------.");
 
-				Console.Write("\nHow many mimutes do you want to stay focused? When the time has finished you will have a 5 minutes break: ");
+				Console.Write("\nHow many mimutes do you want to stay focused? Wehn the time has finished you will have a 5 minutes break: ");
 
 				Minutes = int.Parse(Console.ReadLine());
 
