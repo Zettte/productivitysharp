@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BP6kre435THwim57bTHSrIgUQ1291y3K2N4QyPxWLp5EP6y2p/kwi+H6+Wbke0jTqtRhdN5i4R1tlePuELACMA==",
+  "dgSpecHash": "8RTD1DHNOH4rV76S51viW4yR0tByMdbH/n/4FL8URZFBgoUory7WV9Srxf+FH7BEJDXgyXGZLZSuISIui3lBzQ==",
   "success": true,
-  "projectFilePath": "/home/zette/Documents/Programmation./C#./Productivity/Tasks/Tasks.csproj",
+  "projectFilePath": "C:\\Users\\Usr_bmnautica05\\Documents\\Programacion\\C#\\productivitysharp-Random\\Tasks\\Tasks.csproj",
   "expectedPackageFiles": [
-    "/home/zette/.nuget/packages/csvhelper/27.2.1/csvhelper.27.2.1.nupkg.sha512",
-    "/home/zette/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.2/microsoft.aspnetcore.app.ref.6.0.2.nupkg.sha512"
+    "C:\\Users\\Usr_bmnautica05\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512"
   ],
   "logs": []
 }

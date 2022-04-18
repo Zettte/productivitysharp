@@ -45,19 +45,19 @@
     ]
   },
   "packageFolders": {
-    "/home/zette/.nuget/packages/": {}
+    "C:\\Users\\Usr_bmnautica05\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/zette/Documents/Programmation./C#./Productivity/Tasks/Tasks.csproj",
+      "projectUniqueName": "C:\\Users\\Usr_bmnautica05\\Documents\\Programacion\\C#\\productivitysharp-Random\\Tasks\\Tasks.csproj",
       "projectName": "Tasks",
-      "projectPath": "/home/zette/Documents/Programmation./C#./Productivity/Tasks/Tasks.csproj",
-      "packagesPath": "/home/zette/.nuget/packages/",
-      "outputPath": "/home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/",
+      "projectPath": "C:\\Users\\Usr_bmnautica05\\Documents\\Programacion\\C#\\productivitysharp-Random\\Tasks\\Tasks.csproj",
+      "packagesPath": "C:\\Users\\Usr_bmnautica05\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usr_bmnautica05\\Documents\\Programacion\\C#\\productivitysharp-Random\\Tasks\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/zette/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Usr_bmnautica05\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -96,18 +96,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.2, 6.0.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Usr_bmnautica05\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

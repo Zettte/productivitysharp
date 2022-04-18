@@ -10,3 +10,15 @@
 /home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/Debug/net6.0/Tasks.dll
 /home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/Debug/net6.0/ref/Tasks.dll
 /home/zette/Documents/Programmation./C#./Productivity/Tasks/obj/Debug/net6.0/Tasks.pdb
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\bin\Debug\net6.0\Tasks.deps.json
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\bin\Debug\net6.0\Tasks.dll
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\bin\Debug\net6.0\Tasks.pdb
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\obj\Debug\net6.0\Tasks.csproj.AssemblyReference.cache
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\obj\Debug\net6.0\Tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\obj\Debug\net6.0\Tasks.AssemblyInfoInputs.cache
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\obj\Debug\net6.0\Tasks.AssemblyInfo.cs
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\obj\Debug\net6.0\Tasks.csproj.CoreCompileInputs.cache
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\obj\Debug\net6.0\Tasks.dll
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\obj\Debug\net6.0\refint\Tasks.dll
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\obj\Debug\net6.0\Tasks.pdb
+C:\Users\Usr_bmnautica05\Documents\Programacion\C#\productivitysharp-Random\Tasks\obj\Debug\net6.0\ref\Tasks.dll
