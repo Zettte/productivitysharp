@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "ProductivityApp/1.0.0": {
         "dependencies": {
-          "Goals": "1.0.0",
           "Pomodoro": "1.0.0",
           "Tasks": "1.0.0"
         },
@@ -22,14 +21,6 @@
             "assemblyVersion": "27.0.0.0",
             "fileVersion": "27.2.1.0"
           }
-        }
-      },
-      "Goals/1.0.0": {
-        "dependencies": {
-          "CsvHelper": "27.2.1"
-        },
-        "runtime": {
-          "Goals.dll": {}
         }
       },
       "Pomodoro/1.0.0": {
@@ -59,11 +50,6 @@
       "sha512": "sha512-uS5ix5hL9gL5taiAG//CScyJa8Fn1ZOh3FDhDvf4laboESFs84mCNropfp7PIt8xCkyQofljFpqu1B5UnSXjyA==",
       "path": "csvhelper/27.2.1",
       "hashPath": "csvhelper.27.2.1.nupkg.sha512"
-    },
-    "Goals/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Pomodoro/1.0.0": {
       "type": "project",

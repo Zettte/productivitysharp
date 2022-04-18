@@ -7,6 +7,7 @@ namespace Productivity
 	{
 		static void MainMenu()
 		{
+
 			while(true)
 			{
 				int Option;
@@ -14,10 +15,25 @@ namespace Productivity
 				do
 				{
 					Console.Clear();
-					Console.WriteLine("\t.----------------.\n\t| Productity App |\n\t.----------------.");
+					Console.Write(@"
+					______              _            _   _       _ _             _                      
+					| ___ \            | |          | | (_)     (_| |           | |                     
+					| |_/ _ __ ___   __| |_   _  ___| |_ ___   ___| |_ _   _ ___| |__   __ _ _ __ _ __  
+					|  __| '__/ _ \ / _` | | | |/ __| __| \ \ / | | __| | | / __| '_ \ / _` | '__| '_ \ 
+					| |  | | | (_) | (_| | |_| | (__| |_| |\ V /| | |_| |_| \__ | | | | (_| | |  | |_) |
+					\_|  |_|  \___/ \__,_|\__,_|\___|\__|_| \_/ |_|\__|\__, |___|_| |_|\__,_|_|  | .__/ 
+											    __/ |                    | |    
+											   |___/                     |_|       
+					
+					_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-					Console.WriteLine("\n\tSelect an option. \n\t[ 1 ] Tasks.\n\t[ 2 ] Pomodoro. \n\t[ 3 ] Exit.\n");
-					Console.Write("Option: ");
+					[ 1 ] Tasks.
+
+					[ 2 ] Pomodoro.
+
+					[ 3 ] Exit.
+
+					Select an option:  ");
 
 				} while( !int.TryParse(Console.ReadLine(), out Option) || Option < 1 || Option > 3);
 
@@ -50,11 +66,25 @@ namespace Productivity
 
 				do
 				{
+					Console.Write(@"
+							  	       _____         _        
+								      |_   _|       | |       
+									| | __ _ ___| | _____ 
+									| |/ _` / __| |/ / __|
+									| | (_| \__ |   <\__ \
+									\_/\__,_|___|_|\_|___/
+					_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-					Console.WriteLine("\t.----------------.\n\t Tasks Menu \n\t.----------------.");
 
-					Console.WriteLine("\n\tSelect and option. \n\t[ 1 ] Add task.\n\t[ 2 ] Delete task. \n\t[ 3 ] See all my tasks.\n\t[ 4 ] Return to main menu.\n");
-					Console.Write("Option: ");
+					[ 1 ] Add a new task.
+
+					[ 2 ] Delete all my tasks.
+
+					[ 3 ] See all my tasks.
+
+					[ 4 ] Return to main menu.
+
+					Select an option:  ");
 				
 				}while( !int.TryParse(Console.ReadLine(), out Option) || Option < 1 || Option > 4);
 
@@ -63,17 +93,29 @@ namespace Productivity
 				switch(Option)
 				{
 					case 1:
-						string TaskName = String.Empty, Description = String.Empty;
+						string? TaskName = String.Empty, Description = String.Empty;
 						DateTime Date = DateTime.Now;
 						
-						Console.Write("\nPlease, enter the requested data below.\n[ Task name ]: ");
+						Console.Write("\n\t\t\t\tPlease, enter the requested data below.\n\t\t\t\t[ Task name ]: ");
 						TaskName = Console.ReadLine();
 						
-						Console.Write("[ Task description ]: ");
+						Console.Write("\t\t\t\t[ Task description ]: ");
 						Description = Console.ReadLine();
 
-						Console.Write("[ Date to perform it ] (Format: mm/dd/yyyy): ");
-						Date = DateTime.Parse(Console.ReadLine());
+						Console.Write("\t\t\t\t[ Date to perform it ] (Format: mm/dd/yyyy): ");
+						bool Convert = DateTime.TryParse(Console.ReadLine(), out Date);
+
+						try
+						{
+							if(Date == null || Description == null || TaskName == null)
+							{
+								throw new NullReferenceException();
+							}
+						} catch(NullReferenceException e)
+						{
+							Console.WriteLine($"NullReferenceException {e}");
+							Environment.Exit(1);
+						}
 
 						_Task.AddTask(TaskName, Description, Date);
 
@@ -81,11 +123,15 @@ namespace Productivity
 						break;
 					case 2:
 
-						Console.Write("Are you sure do you want to delete all your tasks? [Y/N]: ");
-						string Desicion = Console.ReadLine();
-						if(Desicion == "Y")
+						Console.Write("\t\t\t\tAre you sure do you want to delete all your tasks? [Y/N]: ");
+						string? Desition = Console.ReadLine();
+
+						if(!String.IsNullOrEmpty(Desition))
 						{
-							_Task.DeleteAllTasks();
+							if(Desition == "Y")
+							{
+								_Task.DeleteAllTasks();
+							}
 						}
 
 						break;
@@ -104,16 +150,25 @@ namespace Productivity
 		static void PomodoroMenu()
 		{
 			int Minutes = 1;
-			string Option = String.Empty;
+			string? Option = String.Empty;
 
 			do
 			{
 				Console.Clear();
-				Console.WriteLine("\t.----------------.\n\t| Pomodoro |\n\t.----------------.");
+				Console.Write(@"
+								______                         _                 
+								| ___ \                       | |                
+								| |_/ ___  _ __ ___   ___   __| | ___  _ __ ___  
+								|  __/ _ \| '_ ` _ \ / _ \ / _` |/ _ \| '__/ _ \ 
+								| | | (_) | | | | | | (_) | (_| | (_) | | | (_) |
+								\_|  \___/|_| |_| |_|\___/ \__,_|\___/|_|  \___/ 
+					_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-				Console.Write("\nHow many mimutes do you want to stay focused? Wehn the time has finished you will have a 5 minutes break: ");
+					[ * ] You're going to start pomodoro. How many minutes do you want to stay focused?
+					
+					Minutes:  ");
 
-				Minutes = int.Parse(Console.ReadLine());
+				bool Convert = int.TryParse(Console.ReadLine(), out Minutes);
 
 				PomodoroTimer.Timer(Minutes);
 				PomodoroTimer.Timer(5);
