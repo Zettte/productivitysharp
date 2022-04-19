@@ -7,7 +7,6 @@ namespace Productivity
 	{
 		static void MainMenu()
 		{
-
 			while(true)
 			{
 				int Option;
@@ -56,7 +55,6 @@ namespace Productivity
 				}
 			}	
 		}
-
 		static void TaskMenu()
 		{
 			Console.Clear();
@@ -123,7 +121,7 @@ namespace Productivity
 						break;
 					case 2:
 
-						Console.Write("\t\t\t\tAre you sure do you want to delete all your tasks? [Y/N]: ");
+						Console.Write("\t\t\t\t\nAre you sure do you want to delete all your tasks? If you delete your tasks, please exit the application and run it again. [Y/N]: ");
 						string? Desition = Console.ReadLine();
 
 						if(!String.IsNullOrEmpty(Desition))
