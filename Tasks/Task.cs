@@ -4,7 +4,7 @@ namespace Tasks
 {
 	public class _Task
 	{
-		public static void AddTask(string Name, string Description, DateTime Date, bool Done = false)
+		public static void AddTask(string Name, string Description = "None", DateTime Date, bool Done = false)
 		{
 
 			string done = ( Done == false ) ? "Not done yet" : "Done";
@@ -45,6 +45,7 @@ namespace Tasks
 			
 				Console.Clear();
 				Console.WriteLine("\t\t\t\tYour current tasks are: ");
+				
 				foreach(string Line in AllTasks)
 				{
 					Console.WriteLine($"\t\t\t\t\t{Line}");
